@@ -107,6 +107,21 @@
     font: 60px Roboto ,sans-serif;
     
   }
+#content{
+    position:relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes content{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
 .readbutton{
     background-color: #FFB320;
     color: black;
