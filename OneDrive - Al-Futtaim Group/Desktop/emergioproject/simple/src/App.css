@@ -1,0 +1,18 @@
+.box{
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 360px;
+  margin-top: 50px;
+  margin-left: 400px;
+}
+span{
+  color: red;
+  display: none;
+}
+input:invalid[focus="true"] ~span{
+display: block;
+}
+input{
+  width:350px;
+}
