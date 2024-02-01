@@ -1,0 +1,286 @@
+
+/* universal selector */
+* {
+    outline: none;
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Smooth Scroll */
+  html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Custom Scrollbar  */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+@media screen and (max-width: 480px) {
+    body {
+      padding: 0.8em;
+    }
+  }
+  .navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 4px solid #FFB320;
+    background-color: black;
+   padding: 20px;
+  }
+  
+  .navBar > h1,.navBar > navigationMenu{
+    margin: 10px;
+  }
+  
+  .navigationMenu > a{
+    padding: 5px 10px;
+    margin-left: 10px; 
+    /* margin-right: 15px; */
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+
+  }
+  .navigationMenu > button{
+    margin-left: 10px;
+    background-color: #FFB320;
+    color: black;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+  }
+  .navigationMenu > a:hover{
+    transition: ease-in-out 300ms;
+    color: #FFB320;
+  }
+  
+  @media only screen and (max-width: 760px){
+    .navigationMenu{
+      display: none;
+    }
+  }
+  /* navbar styles end */  
+  .heroSection {
+    position: relative;
+    height: 100vh;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    /* text-align: center; */
+    /* font-size: 18px; */
+    color: white;
+   margin-left: 50px;
+  }
+  .span1{
+    color:#FFB320;
+ background-color: black;
+  }
+  .text .main-text{
+    font: 60px Roboto ,sans-serif;
+    
+  }
+.readbutton{
+    background-color: #FFB320;
+    color: black;
+    padding: 12px;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 30px;
+}
+.about{
+    margin-top: 30px;
+    background-color: black 0.5;
+}
+/* .enquire-box{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+
+.enquire{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 450px;
+    background-color: white;
+}
+/* div{
+    box-sizing: border-box;
+}
+
+.enquire-box{
+    display: flex;
+    
+  justify-content: space-between;
+  align-items: center;
+}
+.enquire1 {
+    position: relative;
+}
+.enquire2 {
+    position: relative;
+    
+    
+}
+.enquirebtn{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-style: none;
+}
+.box1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.box2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin-left: 0px;
+}
+.box2 p{
+    font-size: large; 
+     background-color: rgba(0, 0, 0, 0.7);
+} */
+.enquire-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .enquire1,
+  .enquire2 {
+    position: relative;
+    width: 48%; /* Adjust the width as needed */
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .enquireimg {
+    width: 100%;
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    display: block;
+    margin: 0; /* Remove margin for images */
+  }
+  
+  .box1,
+  .box2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  .box1 h3,
+  .box2 h3 {
+    margin: 10px 0;
+  }
+  
+  .box1 p,
+  .box2 p {
+    font-size: 16px; /* Adjust the font size for responsiveness */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px; /* Add padding for better readability */
+  }
+  
+  .enquirebtn {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    margin-bottom: 10px;
+  }
+  
+@media only screen and (max-width: 720px) {
+    .enquire1,
+    .enquire2 {
+      width: 100%; /* Make each enquire box take full width on smaller screens */
+    }
+  
+    .box1,
+    .box2 {
+      width: 90%; /* Adjust the width for smaller screens */
+    }
+  }
+  
+
+/* */
+.footer {
+    padding: 10px 20px;
+    
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .footer-item {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .footer-item ul li{
+    opacity: 70%;
+  }
+  
+  .footer-heading {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  .footer ul li {
+    list-style: none;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+
+  
