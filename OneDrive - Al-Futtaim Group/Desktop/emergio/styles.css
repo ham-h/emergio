@@ -28,11 +28,11 @@
     background: #555; 
   }
   
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     body {
       padding: 0.8em;
     }
-  }
+  } */
   .navBar{
     display: flex;
     align-items: center;
@@ -70,11 +70,11 @@
     color: #FFB320;
   }
   
-  @media only screen and (max-width: 760px){
+  /* @media only screen and (max-width: 760px){
     .navigationMenu{
       display: none;
     }
-  }
+  } */
   /* navbar styles end */  
   .heroSection {
     position: relative;
@@ -121,73 +121,26 @@
     margin-top: 30px;
     background-color: black 0.5;
 }
-/* .enquire-box{
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    /* margin-right: -15px;
-    margin-left: -15px; */
+
 
 .enquire{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+ padding: 30px;
     margin-right: auto;
     margin-left: auto;
     height: 450px;
     background-color: white;
 }
-/* div{
-    box-sizing: border-box;
-}
 
-.enquire-box{
-    display: flex;
-    
-  justify-content: space-between;
-  align-items: center;
-}
-.enquire1 {
-    position: relative;
-}
-.enquire2 {
-    position: relative;
-    
-    
-}
-.enquirebtn{
-    padding: 10px;
-    background-color: green;
-    color: white;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border-style: none;
-}
-.box1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-}
-.box2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    margin-left: 0px;
-}
-.box2 p{
-    font-size: large; 
-     background-color: rgba(0, 0, 0, 0.7);
-} */
+
+
+ 
 .enquire-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+ 
   }
   
   .enquire1,
@@ -196,13 +149,21 @@
     width: 48%; /* Adjust the width as needed */
     box-sizing: border-box;
     overflow: hidden;
+    height: 300px;
+    /* margin: 30px 20px; */
+    /* margin: 30px 30px 20px 20px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   
   .enquireimg {
     width: 100%;
     height: auto; /* Ensure the image maintains its aspect ratio */
     display: block;
-    margin: 0; /* Remove margin for images */
+    height: 100%; /* Make both images take up 100% of the container */
+    object-fit: cover; /* Ensure the images maintain their aspect ratio and cover the container */
+
+    margin: 0;/* Remove margin for images */
   }
   
   .box1,
@@ -210,10 +171,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
+ 
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    width: 80%; /* Adjust the width as needed */
+    width: 50%; 
+    /* Adjust the width as needed */
   }
   
   .box1 h3,
@@ -237,17 +200,17 @@
     margin-bottom: 10px;
   }
   
-@media only screen and (max-width: 720px) {
+/* @media only screen and (max-width: 720px) {
     .enquire1,
     .enquire2 {
-      width: 100%; /* Make each enquire box take full width on smaller screens */
+      width: 100%; 
     }
   
     .box1,
     .box2 {
-      width: 90%; /* Adjust the width for smaller screens */
+      width: 50%;
     }
-  }
+  } */
   
 
 /* */
@@ -281,6 +244,231 @@
     padding: 5px;
     cursor: pointer;
   }
-  
+  /* Existing styles */
+/* Existing styles */
 
-  
+/* Add this media query for screens up to 720px */
+@media only screen and (max-width: 720px) {
+    .navBar {
+        padding: 10px;
+    }
+
+    .navigationMenu {
+        display: none;
+    }
+
+    .heroSection .text {
+        top: 10%;
+        margin-left: 20px;
+    }
+
+    .span1 {
+        font-size: 24px;
+    }
+
+    .text .main-text {
+        font-size: 40px;
+    }
+
+    .about {
+        margin-top: 20px;
+    }
+
+    .readbutton {
+        margin-top: 20px;
+    }
+
+    .enquire-box {
+        padding: 15px;
+    }
+    .enquire {
+        height: auto;
+        padding-bottom: 30px; /* Adjust the value as needed */
+    }
+    .enquire1,
+    .enquire2 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .box1,
+    .box2 {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .footer-item {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-heading {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .footer ul li {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .footer-item ul li {
+        opacity: 100%;
+    }
+}
+
+/* Add this media query for screens up to 460px */
+@media only screen and (max-width: 460px) {
+    .navBar {
+        padding: 10px;
+    }
+
+    .navigationMenu {
+        display: none;
+    }
+
+    .heroSection .text {
+        top: 5%;
+        margin-left: 10px;
+    }
+   
+    .span1 {
+        font-size: 18px;
+    }
+
+    .text .main-text {
+        font-size: 32px;
+    }
+
+    .about {
+        margin-top: 10px;
+    }
+
+    .readbutton {
+        margin-top: 10px;
+    }
+    .enquire {
+        height: auto;
+        padding-bottom: 20px; /* Adjust the value as needed */
+    }
+    .enquire-box {
+        padding: 10px;
+    }
+
+    .enquire1,
+    .enquire2 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .box1,
+    .box2 {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 5px;
+    }
+
+    .footer-item {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-heading {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .footer ul li {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    .footer-item ul li {
+        opacity: 100%;
+    }
+}
+
+/* Add this media query for screens up to 720px */
+/* Existing styles */
+
+/* Add this media query for screens up to 720px */
+/* @media only screen and (max-width: 720px) {
+    .heroSection .text {
+        top: 10%;
+        margin-left: 20px;
+    }
+
+    .span1 {
+        font-size: 24px;
+    }
+
+    .text .main-text {
+        font-size: 40px;
+    }
+
+    .about {
+        margin-top: 20px;
+    }
+
+    .readbutton {
+        margin-top: 20px;
+    }
+
+    .enquire-box {
+        padding: 15px;
+    }
+
+    .enquire1,
+    .enquire2 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .box1,
+    .box2 {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .footer-item {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-heading {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .footer ul li {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .footer-item ul li {
+        opacity: 100%;
+    }
+}
+
+/* Add this media query for screens up to 460px */
+/*  */
