@@ -15,7 +15,7 @@ const Ccard = ({data}) => {
     <Card.Body>
       <Card.Title>{item.strMeal}</Card.Title>
      
-      <Button variant="primary">{item.idMeal} Submit</Button>
+      <Button variant="primary" onClick={()=>{alert("Added to Cart")}}>{item.idMeal} Submit</Button>
       
          
      
