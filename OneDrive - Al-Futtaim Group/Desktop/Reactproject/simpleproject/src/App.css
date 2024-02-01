@@ -1,0 +1,21 @@
+.cd{
+  /* background-color: aquamarine; */
+  width: '18rem';
+  
+   display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+  gap: 16px; 
+  
+margin-top: 80px;
+
+}
+.main{
+  background-color: blueviolet;
+  padding:100px;
+}
+.card{
+  border: 1px solid #ccc;
+      padding: 10px;
+    
+ 
+}
