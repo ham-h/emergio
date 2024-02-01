@@ -159,12 +159,12 @@
   
   .enquireimg {
     width: 100%;
-    height: auto; /* Ensure the image maintains its aspect ratio */
+    height: auto; 
     display: block;
-    height: 100%; /* Make both images take up 100% of the container */
-    object-fit: cover; /* Ensure the images maintain their aspect ratio and cover the container */
+    height: 100%; 
+    object-fit: cover; 
 
-    margin: 0;/* Remove margin for images */
+    margin: 0;
   }
   
   .box1,
@@ -187,9 +187,9 @@
   
   .box1 p,
   .box2 p {
-    font-size: 16px; /* Adjust the font size for responsiveness */
+    font-size: 16px;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px; /* Add padding for better readability */
+    padding: 10px; 
   }
   
   .enquirebtn {
@@ -201,20 +201,6 @@
     margin-bottom: 10px;
   }
  
-/* @media only screen and (max-width: 720px) {
-    .enquire1,
-    .enquire2 {
-      width: 100%; 
-    }
-  
-    .box1,
-    .box2 {
-      width: 50%;
-    }
-  } */
-  
-
-/* */
 .footer {
     padding: 10px 20px;
     
@@ -245,10 +231,8 @@
     padding: 5px;
     cursor: pointer;
   }
-  /* Existing styles */
-/* Existing styles */
+ 
 
-/* Add this media query for screens up to 720px */
 @media only screen and (max-width: 720px) {
     .navBar {
         padding: 10px;
@@ -287,7 +271,7 @@
     }
     .enquire {
         height: auto;
-        padding-bottom: 30px; /* Adjust the value as needed */
+        padding-bottom: 30px; 
     }
     .enquire1,
     .enquire2 {
@@ -328,7 +312,6 @@
     }
 }
 
-/* Add this media query for screens up to 460px */
 @media only screen and (max-width: 460px) {
     .navBar {
         padding: 10px;
@@ -360,7 +343,7 @@
     }
     .enquire {
         height: auto;
-        padding-bottom: 20px; /* Adjust the value as needed */
+        padding-bottom: 20px; 
     }
     .enquire-box {
         padding: 10px;
@@ -405,74 +388,3 @@
     }
 }
 
-/* Add this media query for screens up to 720px */
-/* Existing styles */
-
-/* Add this media query for screens up to 720px */
-/* @media only screen and (max-width: 720px) {
-    .heroSection .text {
-        top: 10%;
-        margin-left: 20px;
-    }
-
-    .span1 {
-        font-size: 24px;
-    }
-
-    .text .main-text {
-        font-size: 40px;
-    }
-
-    .about {
-        margin-top: 20px;
-    }
-
-    .readbutton {
-        margin-top: 20px;
-    }
-
-    .enquire-box {
-        padding: 15px;
-    }
-
-    .enquire1,
-    .enquire2 {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .box1,
-    .box2 {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px 10px;
-    }
-
-    .footer-item {
-        width: 100%;
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .footer-heading {
-        margin-bottom: 10px;
-        font-size: 18px;
-    }
-
-    .footer ul li {
-        margin: 5px 0;
-        font-size: 14px;
-    }
-
-    .footer-item ul li {
-        opacity: 100%;
-    }
-}
-
-/* Add this media query for screens up to 460px */
-/*  */
