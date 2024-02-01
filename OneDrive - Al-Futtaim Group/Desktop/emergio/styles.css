@@ -46,7 +46,9 @@
   .navBar > h1,.navBar > navigationMenu{
     margin: 10px;
   }
-  
+  /* .navigationMenu{
+    display: none;
+  } */
   .navigationMenu > a{
     padding: 5px 10px;
     margin-left: 10px; 
@@ -70,11 +72,7 @@
     color: #FFB320;
   }
   
-  /* @media only screen and (max-width: 760px){
-    .navigationMenu{
-      display: none;
-    }
-  } */
+  
   /* navbar styles end */  
   .heroSection {
     position: relative;
@@ -119,7 +117,10 @@
 }
 .about{
     margin-top: 30px;
-    background-color: black 0.5;
+    background-color: rgba(0, 0, 0, 0.7);
+  width: fit-content;
+    padding: 10px;
+   
 }
 
 
@@ -199,7 +200,7 @@
     border-style: none;
     margin-bottom: 10px;
   }
-  
+ 
 /* @media only screen and (max-width: 720px) {
     .enquire1,
     .enquire2 {
@@ -256,6 +257,9 @@
     .navigationMenu {
         display: none;
     }
+    .hamburger-icon {
+        display: block;
+      }
 
     .heroSection .text {
         top: 10%;
